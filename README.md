@@ -17,7 +17,7 @@ How to run
   - Python 3
   - cryptography
      (Fernet)
-  - hashlib (SHA-256)
+  - hashlib 
   - base64
   - getpass
 
