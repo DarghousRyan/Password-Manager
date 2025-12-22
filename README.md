@@ -8,10 +8,10 @@ How to run
   - "cd password-manager"
     
   2. Install Dependencies:
-    - "pip install cryptography"
+  - "pip install cryptography"
     
   3. Run:
-    - "python main.py"
+  - "python main.py"
      
 **Technologies Used**
   - Python 3
