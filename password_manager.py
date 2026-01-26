@@ -27,14 +27,16 @@ def view():
 #One of three modes; Allows the user to add an Account Name & Password
 def add():
     name = input("Account name: ")
-    with open("passwords.txt", "r") as f:
-        for line in f:
-            user, pwd = line.rstrip().split("|")
-            if user == name:
-                print(f"{name} has already been used, please try again")
-                return
+    try:
+        with open("passwords.txt", "r") as f:
+            for line in f:
+                user, pwd = line.rstrip().split("|")
+                if user == name:
+                    print(f"{name} has already been used, please try again")
+                    return
+    except FileNotFoundError:
+        pass
 
-        
     password = input("Password: ")
 
     with open('passwords.txt', 'a') as f:
@@ -94,3 +96,4 @@ def main():
 #Runs main()
 if __name__ == "__main__":
     main()
+
