@@ -4,7 +4,7 @@ This Python program is a password manager that securely stores and retrieves acc
 
 How to run
   1. Clone the repository:
-  - "git clone https://github.com/yourusername/password-manager.git"
+  - "git clone https://github.com/rdarghous/password-manager.git"
   - "cd password-manager"
     
   2. Install Dependencies:
